@@ -169,6 +169,89 @@ body {
   border-radius: 100%;
 }
 
+/* Estilizando a section soluções */
+
+.section_Solucoes {
+  background: #0d2c54ff;
+}
+
+.container_Solu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  min-height: 100vh;
+}
+
+.solucoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.h2_Solucoes {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 2.25rem;
+  color: #f9fafbff;
+}
+
+.h3_Solucoes {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #dde0e4ff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.seta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  max-width: 15rem;
+  height: 20.25rem;
+  gap: 1.8rem;
+  background: #0d2c54ff;
+  border-radius: 1rem;
+  box-shadow:
+    0 10px 12px #00000014,
+    0 0 0 #171a1f00;
+  margin-top: 2rem;
+}
+
+.img_Seta {
+  width: 3rem;
+  height: auto;
+}
+
+.h2_Seta {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  color: #f9fafbff;
+}
+
+.h3_Seta {
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #dde0e4ff;
+}
+
 @media (hover: hover) {
   /* header */
   .nav a:hover {
@@ -182,6 +265,10 @@ body {
 
   .bt-two:hover {
     transform: scale(1.1);
+  }
+
+  .seta:hover {
+    border: 1px solid #f9fafbff;
   }
 }
 
