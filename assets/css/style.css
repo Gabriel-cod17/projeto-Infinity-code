@@ -240,7 +240,7 @@ body {
 
 .h2_Seta {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 600;
   line-height: 1.5rem;
   color: #f9fafbff;
@@ -278,7 +278,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .h2_Funciona {
@@ -313,10 +313,10 @@ body {
   width: 100%;
   max-width: 15rem;
   min-height: 20.25rem;
-  gap: 1.5rem;
+  gap: 2rem;
   background: #0d2c54ff;
   box-shadow:
-    0 2ox 4px #00000014,
+    0 2px 4px #00000014,
     0 0 0 #171a1f00;
   padding: 0 1rem;
   border-radius: 1rem;
@@ -336,9 +336,216 @@ body {
 
 .h3_Consulta {
   font-family: "Montserrat", sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 400;
   color: #dde0e4ff;
+}
+
+/* Estilizando a parte section, onde fala sobre os benefícios */
+
+.section_Beneficios {
+  background: #0d2c54ff;
+}
+
+.container_Beneficios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  min-height: 100vh;
+  padding: 0 1rem;
+  gap: 3rem;
+}
+
+.texto_Beneficios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.h2_Beneficios {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 1.5rem;
+  color: #f9fafbff;
+}
+
+.h3_Beneficios {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #dde0e4ff;
+}
+
+/* Estilizando a grid */
+
+.grid_Beneficios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.beneficios {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  gap: 1rem;
+  width: 100%;
+  max-width: 20rem;
+  height: 12rem;
+  border: 1rem;
+  box-shadow:
+    0 10px 12px #00000014,
+    0 0 0 #171a1f00;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+.img_Grid {
+  width: 2rem;
+  height: auto;
+}
+
+.h2_Grid {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f9fafbff;
+}
+
+.h3_Grid {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #dde0e4ff;
+}
+
+/* Estilizando a parte section Preços */
+
+.section_Precos {
+  background: #0d2c54ff;
+}
+.container_Precos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  min-height: 100vh;
+  gap: 3rem;
+  padding: 0 1rem;
+}
+
+.texto_Precos {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+}
+
+.h2_Planos {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 1.5rem;
+  color: #f9fafbff;
+}
+
+.h3_Escolha {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #dde0e4ff;
+}
+
+/* estilizando a grid */
+
+.grid_Precos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.Precos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 16rem;
+  max-width: 100%;
+  min-height: 23rem;
+  background: #0d2c54ff;
+  box-shadow:
+    0 10px 12px #00000014,
+    0 0 0 #171a1f00;
+  border-radius: 1rem;
+  overflow: hidden;
+  gap: 2rem;
+}
+
+.h2_Precos {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #f9fafbff;
+}
+
+.h3_Precos {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #dde0e4ff;
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+  list-style: none;
+  position: relative;
+}
+
+.lista li {
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #dde0e4ff;
+}
+
+.lista li::before {
+  content: "✔";
+  position: absolute;
+  color: #f9fafbff;
+  left: -1.2rem;
+}
+
+.bt_Precos {
+  width: 9rem;
+  max-width: 100%;
+  min-height: 1.9rem;
+  background: transparent;
+  color: #05eeffff;
+  border-radius: 0.5rem;
+  border: 1px solid #05eeffff;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
 }
 
 @media (hover: hover) {
@@ -356,8 +563,30 @@ body {
     transform: scale(1.1);
   }
 
+  /* Estilizando a section soluções */
   .seta:hover {
     border: 1px solid #f9fafbff;
+  }
+
+  /* Parte section beneficios */
+  .beneficios:hover {
+    border: 1px solid white;
+  }
+
+  /* Section preços */
+  .Precos:hover {
+    background: #05eeffff;
+    color: black;
+  }
+  .Precos:hover .h2_Precos,
+  .Precos:hover .h3_Precos,
+  .Precos:hover .lista li,
+  .Precos:hover .lista li::before {
+    color: black;
+  }
+
+  .Precos:hover .bt_Precos {
+    background: black;
   }
 }
 
@@ -374,5 +603,31 @@ body {
 
   .bt-two:active {
     transform: scale(1.1);
+  }
+
+  /* Estilizando a section soluções */
+  .seta:active {
+    border: 1px solid #f9fafbff;
+  }
+
+  /* Parte section beneficios */
+  .beneficios:active {
+    border: 1px solid white;
+  }
+
+  /* Section preços */
+  .Precos:active {
+    background: #05eeffff;
+    color: black;
+  }
+  .Precos:active .h2_Precos,
+  .Precos:active .h3_Precos,
+  .Precos:active .lista li,
+  .Precos:active .lista li::before {
+    color: black;
+  }
+
+  .Precos:active .bt_Precos {
+    background: black;
   }
 }
