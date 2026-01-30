@@ -230,11 +230,11 @@ body {
   box-shadow:
     0 10px 12px #00000014,
     0 0 0 #171a1f00;
-  padding: 0 1rem;
+  padding: 0 0.9rem;
 }
 
-.img_Seta {
-  width: 3rem;
+.img_Setas {
+  width: 2rem;
   height: auto;
 }
 
@@ -548,10 +548,173 @@ body {
   font-size: 0.9rem;
 }
 
+/* Estilizando a parte Section FAQ */
+
+.section_Faq {
+  background: #1b5aacff;
+}
+
+.div_Section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 auto;
+  max-width: 1200px;
+  min-height: 100vh;
+  gap: 1.2rem;
+  padding: 10rem 1rem 0;
+}
+.h2_Perguntas {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 1.5rem;
+  color: #f9fafbff;
+}
+
+.h3_Encontre {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #dde0e4ff;
+}
+
+/* Estilizando o FAQ */
+
+.button_FAQ {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+.img_Seta {
+  width: 1rem;
+}
+
+.faq_Question {
+  width: 100%;
+  background: #0d2c54ff;
+  border: 1px solid #0d2c54ff;
+  border-radius: 0.5rem;
+  box-shadow:
+    0 10px 12px #00000014,
+    0 0 0 #171a1f00;
+  padding: 1rem 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  font-weight: bold;
+  color: #f9fafbff;
+}
+
+.faq_Answer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background: #0d2c54ff;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 2rem;
+  margin: 0.1rem;
+  color: #f9f9f9;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 300;
+  opacity: 0;
+  transition:
+    max-height 0.5s ease,
+    padding 0.5s ease,
+    opacity 0.5s ease;
+}
+
+.faq_Answer.entrou {
+  max-height: 300px;
+  padding: 1rem 2rem;
+  opacity: 1;
+}
+
+.footer {
+  background: #0d2c54ff;
+}
+
+.container_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 1200px;
+  min-height: 30vh;
+}
+
+.footer_Img {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_Footer {
+  width: 6rem;
+  height: auto;
+}
+
+.span_Img {
+  color: #f9fafbff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 300;
+  font-style: oblique;
+}
+.MenuRapido {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.span_MenuRa {
+  color: #f9fafbff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.MenuRapido a {
+  text-decoration: none;
+  color: #f9fafbff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+
+.footer_Linha {
+  width: 100%;
+  border: 0.5px solid #f9fafb33;
+}
+
+.footer_P {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  color: #f9fafbff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
 @media (hover: hover) {
   /* header */
   .nav a:hover {
-    color: #000000ff;
+    color: #05eeffff;
     transform: scale(1.1);
   }
   /* main */
@@ -587,6 +750,11 @@ body {
 
   .Precos:hover .bt_Precos {
     background: black;
+  }
+
+  /* Footer */
+  .MenuRapido a:hover {
+    color: #05eeffff;
   }
 }
 
@@ -629,5 +797,10 @@ body {
 
   .Precos:active .bt_Precos {
     background: black;
+  }
+
+  /* Footer */
+  .MenuRapido a:active {
+    color: #05eeffff;
   }
 }
