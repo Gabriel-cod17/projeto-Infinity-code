@@ -26,6 +26,7 @@ body {
   background: #0d2c54ff;
   box-shadow: 0 2px 4px #00000014;
   padding: 0 0.3rem;
+  z-index: 999;
 }
 
 .header.scrolled {
@@ -90,8 +91,8 @@ body {
   max-width: 1200px;
   min-height: 100vh;
   margin: 0 auto;
-  gap: 5rem;
-  padding: 0 1rem;
+  gap: 3rem;
+  padding: 1rem;
   flex-wrap: wrap;
   overflow: hidden;
 }
@@ -184,6 +185,7 @@ body {
   max-width: 1200px;
   min-height: 100vh;
   gap: 2rem;
+  padding: 1rem;
 }
 
 .solucoes {
@@ -268,7 +270,7 @@ body {
   max-width: 1200px;
   min-height: 100vh;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 1rem;
   gap: 2rem;
 }
 
@@ -356,7 +358,7 @@ body {
   margin: 0 auto;
   max-width: 1200px;
   min-height: 100vh;
-  padding: 0 1rem;
+  padding: 1rem;
   gap: 3rem;
 }
 
@@ -374,7 +376,6 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 2.25rem;
   font-weight: 800;
-  line-height: 1.5rem;
   color: #f9fafbff;
 }
 
@@ -446,7 +447,7 @@ body {
   max-width: 1200px;
   min-height: 100vh;
   gap: 3rem;
-  padding: 0 1rem;
+  padding: 1rem;
 }
 
 .texto_Precos {
@@ -460,7 +461,6 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 2.25rem;
   font-weight: 800;
-  line-height: 1.5rem;
   color: #f9fafbff;
 }
 
@@ -485,8 +485,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 16rem;
-  max-width: 100%;
+  width: 100%;
+  max-width: 25rem;
   min-height: 23rem;
   background: #0d2c54ff;
   box-shadow:
@@ -494,7 +494,8 @@ body {
     0 0 0 #171a1f00;
   border-radius: 1rem;
   overflow: hidden;
-  gap: 2rem;
+  gap: 1rem;
+  padding: 0 1rem;
 }
 
 .h2_Precos {
@@ -526,13 +527,15 @@ body {
   font-weight: 400;
   line-height: 1.5rem;
   color: #dde0e4ff;
+  position: relative;
+  padding-left: 1.5rem;
 }
 
 .lista li::before {
   content: "✔";
   position: absolute;
   color: #f9fafbff;
-  left: -1.2rem;
+  left: 0;
 }
 
 .bt_Precos {
@@ -558,18 +561,19 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+  text-align: center;
   margin: 0 auto;
   max-width: 1200px;
   min-height: 100vh;
   gap: 1.2rem;
-  padding: 10rem 1rem 0;
+  padding: 10rem 1rem;
 }
 .h2_Perguntas {
   font-family: "Montserrat", sans-serif;
   font-size: 2.25rem;
   font-weight: 800;
-  line-height: 1.5rem;
+
   color: #f9fafbff;
 }
 
@@ -582,12 +586,20 @@ body {
 
 /* Estilizando o FAQ */
 
+.faq_Item {
+  width: 100%;
+  max-width: 80%;
+  box-sizing: border-box;
+}
+
 .button_FAQ {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   text-align: left;
+  flex-wrap: nowrap;
+  width: 100%;
 }
 
 .img_Seta {
@@ -595,6 +607,7 @@ body {
 }
 
 .faq_Question {
+  box-sizing: border-box;
   width: 100%;
   background: #0d2c54ff;
   border: 1px solid #0d2c54ff;
@@ -609,11 +622,19 @@ body {
   cursor: pointer;
   font-weight: bold;
   color: #f9fafbff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+.faq_Text {
+  flex: 1;
+  text-align: left;
 }
 
 .faq_Answer {
   display: flex;
-  text-align: center;
+  text-align: left;
   justify-content: center;
   background: #0d2c54ff;
   border-radius: 0.5rem;
@@ -711,6 +732,73 @@ body {
   font-size: 0.8rem;
   font-weight: 100;
 }
+
+/* Entrada das div  */
+
+/* cima e baixo*/
+.cima {
+  opacity: 0;
+  transform: translateY(-50%);
+  transition:
+    transform 1s ease,
+    opacity 1s ease;
+}
+
+.baixo {
+  opacity: 0;
+  transform: translateY(50%);
+  transition:
+    transform 1s ease,
+    opacity 1s ease;
+}
+.entrouY {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Esquerda e Direita*/
+
+.esquerda {
+  opacity: 0;
+  transform: translateX(-50%);
+  transition:
+    transform 1s ease,
+    opacity 1s ease;
+}
+
+.direita {
+  opacity: 0;
+  transform: translateX(50%);
+  transition:
+    transform 1s ease,
+    opacity 1s ease;
+}
+
+.entrouX {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Zoom */
+
+.zoom {
+  transform: scale(1.8);
+  transition: transform 1.5s ease;
+}
+
+.entrouZoom {
+  transform: scale(1);
+}
+
+.sumiu {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.entrouSumiu {
+  opacity: 1;
+}
+
 @media (hover: hover) {
   /* header */
   .nav a:hover {
@@ -802,5 +890,169 @@ body {
   /* Footer */
   .MenuRapido a:active {
     color: #05eeffff;
+  }
+}
+
+/* Responsividade para mobile */
+
+@media (max-width: 489px) {
+  /* header */
+  .header {
+    justify-content: space-between;
+  }
+  .nav {
+    display: none;
+  }
+  /* Pimeira parte da página */
+  .h1_Transforme {
+    font-size: 2rem;
+  }
+  .h2_Infinity {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .section_Main {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+
+  /* container soluções  */
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Terceira parte da página grid funciona */
+
+  .grid_Funciona {
+    grid-template-columns: 1fr;
+  }
+
+  /* Quarta parte da página grid_Beneficios */
+
+  .grid_Beneficios {
+    grid-template-columns: 1fr;
+  }
+
+  /* Preços */
+  .grid_Precos {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 490px) and (max-width: 645px) {
+  .header {
+    justify-content: space-between;
+  }
+  .nav {
+    display: none;
+  }
+  .section_Main {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+
+  /* container soluções  */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Terceira parte da página grid funciona */
+
+  .grid_Funciona {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* container preços  */
+  .grid_Precos {
+    grid-template-columns: repeat(2, 1fr);
+    justify-self: center;
+  }
+
+  /* Quarta parte da página grid_Beneficios */
+
+  .grid_Beneficios {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ultimas grid geral */
+  .ultimo {
+    display: grid;
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+}
+
+@media (min-width: 646px) and (max-width: 843px) {
+  /* container primeira parte da página */
+  .div_One_Section {
+    align-items: center;
+  }
+  .section_Main {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+  /* container soluções  */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Terceira parte da página grid funciona */
+
+  .grid_Funciona {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* container preços  */
+  .grid_Precos {
+    grid-template-columns: repeat(2, 1fr);
+    justify-self: center;
+  }
+
+  /* Quarta parte da página grid_Beneficios */
+
+  .grid_Beneficios {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ultimas grid geral */
+  .ultimo {
+    display: grid;
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+}
+
+/* Responsividade para tablets */
+@media (min-width: 844px) and (max-width: 968px) {
+  /* container preços  */
+  .grid_Precos {
+    grid-template-columns: repeat(2, 1fr);
+    justify-self: center;
+  }
+
+  /* container soluções  */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Terceira parte da página grid funciona */
+
+  .grid_Funciona {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Quarta parte da página grid_Beneficios */
+
+  .grid_Beneficios {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ultimas grid geral */
+  .ultimo {
+    display: grid;
+    grid-column: 1/-1;
+    justify-self: center;
   }
 }
