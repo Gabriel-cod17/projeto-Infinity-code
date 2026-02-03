@@ -1,8 +1,7 @@
 export function startVideo() {
   const video = document.getElementById("video");
 
-  window.addEventListener("DOMContentLoaded", () => {
-    video.muted = true;
+  video.addEventListener("canplaythrough", () => {
     video.play().catch(() => {});
   });
 }
