@@ -846,53 +846,6 @@ body {
   }
 }
 
-@media (hover: none) {
-  /* header */
-  .nav a:active {
-    color: #000000ff;
-    transform: scale(1.1);
-  }
-  /* main */
-  .bt-one:active {
-    transform: scale(1.1);
-  }
-
-  .bt-two:active {
-    transform: scale(1.1);
-  }
-
-  /* Estilizando a section soluções */
-  .seta:active {
-    border: 1px solid #f9fafbff;
-  }
-
-  /* Parte section beneficios */
-  .beneficios:active {
-    border: 1px solid white;
-  }
-
-  /* Section preços */
-  .Precos:active {
-    background: #05eeffff;
-    color: black;
-  }
-  .Precos:active .h2_Precos,
-  .Precos:active .h3_Precos,
-  .Precos:active .lista li,
-  .Precos:active .lista li::before {
-    color: black;
-  }
-
-  .Precos:active .bt_Precos {
-    background: black;
-  }
-
-  /* Footer */
-  .MenuRapido a:active {
-    color: #05eeffff;
-  }
-}
-
 /* Responsividade para mobile */
 
 @media (max-width: 489px) {
@@ -920,6 +873,9 @@ body {
   .grid {
     grid-template-columns: 1fr;
   }
+  .seta {
+    border: 1px solid #f9fafbff;
+  }
 
   /* Terceira parte da página grid funciona */
 
@@ -932,10 +888,31 @@ body {
   .grid_Beneficios {
     grid-template-columns: 1fr;
   }
+  .beneficios {
+    border: 1px solid white;
+  }
 
   /* Preços */
   .grid_Precos {
     grid-template-columns: 1fr;
+  }
+  .Precos {
+    background: #05eeffff;
+    color: black;
+  }
+  .h2_Precos,
+  .h3_Precos,
+  .lista li,
+  .lista li::before {
+    color: black;
+  }
+
+  .bt_Precos {
+    background: black;
+  }
+  /* Footer */
+  .MenuRapido a {
+    color: #05eeffff;
   }
 }
 
@@ -946,15 +923,23 @@ body {
   .nav {
     display: none;
   }
+
+  /* Section main, primeira parte da página */
   .section_Main {
     flex-direction: column-reverse;
     gap: 1rem;
+  }
+  .div_One_Section {
+    align-items: center;
   }
 
   /* container soluções  */
   .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .seta {
+    border: 1px solid #f9fafbff;
   }
 
   /* Terceira parte da página grid funciona */
@@ -968,10 +953,29 @@ body {
     justify-self: center;
   }
 
+  .Precos {
+    background: #05eeffff;
+    color: black;
+  }
+
+  .h2_Precos,
+  .h3_Precos,
+  .lista li,
+  .lista li::before {
+    color: black;
+  }
+
+  .bt_Precos {
+    background: black;
+  }
+
   /* Quarta parte da página grid_Beneficios */
 
   .grid_Beneficios {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .beneficios {
+    border: 1px solid white;
   }
 
   /* ultimas grid geral */
@@ -979,6 +983,10 @@ body {
     display: grid;
     grid-column: 1/-1;
     justify-self: center;
+  }
+  /* Footer */
+  .MenuRapido a {
+    color: #05eeffff;
   }
 }
 
@@ -997,6 +1005,10 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .seta {
+    border: 1px solid #f9fafbff;
+  }
+
   /* Terceira parte da página grid funciona */
 
   .grid_Funciona {
@@ -1008,11 +1020,28 @@ body {
     grid-template-columns: repeat(2, 1fr);
     justify-self: center;
   }
+  .Precos {
+    background: #05eeffff;
+    color: black;
+  }
+  .h2_Precos,
+  .h3_Precos,
+  .lista li,
+  .lista li::before {
+    color: black;
+  }
+
+  .bt_Precos {
+    background: black;
+  }
 
   /* Quarta parte da página grid_Beneficios */
 
   .grid_Beneficios {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .beneficios {
+    border: 1px solid white;
   }
 
   /* ultimas grid geral */
@@ -1020,6 +1049,10 @@ body {
     display: grid;
     grid-column: 1/-1;
     justify-self: center;
+  }
+  /* Footer */
+  .MenuRapido a {
+    color: #05eeffff;
   }
 }
 
@@ -1030,11 +1063,28 @@ body {
     grid-template-columns: repeat(2, 1fr);
     justify-self: center;
   }
+  .Precos {
+    background: #05eeffff;
+    color: black;
+  }
+  .h2_Precos,
+  .h3_Precos,
+  .lista li,
+  .lista li::before {
+    color: black;
+  }
+
+  .bt_Precos {
+    background: black;
+  }
 
   /* container soluções  */
   .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .seta {
+    border: 1px solid #f9fafbff;
   }
 
   /* Terceira parte da página grid funciona */
@@ -1048,11 +1098,18 @@ body {
   .grid_Beneficios {
     grid-template-columns: repeat(2, 1fr);
   }
+  .beneficios {
+    border: 1px solid white;
+  }
 
   /* ultimas grid geral */
   .ultimo {
     display: grid;
     grid-column: 1/-1;
     justify-self: center;
+  }
+  /* Footer */
+  .MenuRapido a {
+    color: #05eeffff;
   }
 }
