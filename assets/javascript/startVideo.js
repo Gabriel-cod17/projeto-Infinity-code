@@ -5,4 +5,9 @@ export function startVideo() {
     video.muted = true;
     video.play().catch(() => {});
   });
+
+  document.body.addEventListener("touchstart", () => {
+    video.muted = true;
+    video.play();
+  });
 }
