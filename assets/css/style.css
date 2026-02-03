@@ -84,12 +84,6 @@ body {
   cursor: pointer;
 }
 
-.menu_Fechado {
-  display: none;
-  width: 1.5rem;
-  height: auto;
-}
-
 .header_Mobile {
   display: flex;
   flex-direction: column;
@@ -265,7 +259,7 @@ body {
   max-width: 1200px;
   min-height: 100vh;
   gap: 2rem;
-  padding: 1rem;
+  padding: 5rem 1rem;
 }
 
 .solucoes {
@@ -350,7 +344,7 @@ body {
   max-width: 1200px;
   min-height: 100vh;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 5rem 1rem;
   gap: 2rem;
 }
 
@@ -438,7 +432,7 @@ body {
   margin: 0 auto;
   max-width: 1200px;
   min-height: 100vh;
-  padding: 1rem;
+  padding: 5rem 1rem;
   gap: 3rem;
 }
 
@@ -527,7 +521,7 @@ body {
   max-width: 1200px;
   min-height: 100vh;
   gap: 3rem;
-  padding: 1rem;
+  padding: 5rem 1rem;
 }
 
 .texto_Precos {
