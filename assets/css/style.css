@@ -109,26 +109,27 @@ body {
 .nav_Mobile {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2.5rem;
   text-align: left;
-  margin-left: 0.5rem;
+  padding-left: 0.5rem;
+  width: 100%;
 }
 
 .nav_Mobile a {
   text-decoration: none;
   color: #f9fafbff;
   font-family: "Roboto", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 400;
 }
 
 .bt_Nav_mobile {
-  width: 23rem;
-  max-width: 100%;
+  width: 100%;
   padding: 0.4rem 1.5rem;
   border-radius: 0.5rem;
   color: #161a1dff;
   font-family: "Inter", sans-serif;
+  font-size: 1rem;
   background: linear-gradient(
     90deg,
     #5479e8ff 0%,
