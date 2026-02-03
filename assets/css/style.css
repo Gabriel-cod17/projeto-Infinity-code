@@ -83,6 +83,12 @@ body {
   height: auto;
 }
 
+.menu_Fechado {
+  display: none;
+  width: 1.5rem;
+  height: auto;
+}
+
 .header_Mobile {
   display: flex;
   flex-direction: column;
@@ -203,7 +209,7 @@ body {
 
 .bt-one {
   max-width: 100%;
-  padding: 0.4rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   color: #161a1dff;
   font-family: "Inter", sans-serif;
@@ -220,7 +226,7 @@ body {
 
 .bt-two {
   max-width: 100%;
-  padding: 0.4rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   font-family: "Inter", sans-serif;
   color: #161a1dff;
