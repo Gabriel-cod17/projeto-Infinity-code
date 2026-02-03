@@ -865,7 +865,13 @@ body {
     line-height: 1.5rem;
   }
   .section_Main {
-    flex-direction: column-reverse;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .div_One_Section {
+    text-align: inherit;
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
   }
 
