@@ -81,6 +81,7 @@ body {
   display: none;
   width: 2rem;
   height: auto;
+  cursor: pointer;
 }
 
 .menu_Fechado {

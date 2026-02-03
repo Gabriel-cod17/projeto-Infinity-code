@@ -5,10 +5,10 @@ export function MenuAberto() {
   menu_Aberto.addEventListener("click", () => {
     if (header_Mobile.classList.contains("header_Mobile_Entrou")) {
       header_Mobile.classList.remove("header_Mobile_Entrou");
-      menu_Aberto.src = "assets/img/menu-aberto.png";
+      menu_Aberto.src = "/assets/img/menu-aberto.png";
     } else {
       header_Mobile.classList.add("header_Mobile_Entrou");
-      menu_Aberto.src = "assets/img/x.png";
+      menu_Aberto.src = "/assets/img/x.png";
     }
   });
 }
