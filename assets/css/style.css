@@ -935,6 +935,11 @@ body {
     margin-right: 0.5rem;
   }
 
+  .menu_Fechado {
+    display: flex;
+    margin-right: 0.5rem;
+  }
+
   /* header */
   .header {
     justify-content: space-between;
