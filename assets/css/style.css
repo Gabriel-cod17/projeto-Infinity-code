@@ -611,7 +611,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 25rem;
+  max-width: 19rem;
   min-height: 23rem;
   background: #0d2c54ff;
   box-shadow:
@@ -620,7 +620,7 @@ body {
   border-radius: 1rem;
   overflow: hidden;
   gap: 1rem;
-  padding: 0 1rem;
+  padding: 1rem;
 }
 
 .h2_Precos {
