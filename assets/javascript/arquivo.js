@@ -4,6 +4,7 @@ import { Faq } from "./faq.js";
 import { startVideo } from "./startVideo.js";
 import { menuMobile } from "./menuMobile.js";
 import { MenuAberto, aMobile } from "./menuMobileAberto.js";
+import { google } from "./googleAnalytics.js";
 
 headerScrolled();
 Sumiu();
@@ -15,3 +16,4 @@ startVideo();
 menuMobile();
 MenuAberto();
 aMobile();
+google();
